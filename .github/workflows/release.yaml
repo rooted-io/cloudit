@@ -12,10 +12,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install Cosign
-        uses: sigstore/cosign-installer@v3.1.1
-        with:
-          cosign-release: 'v2.2.3'
+      # - name: Install Cosign
+      #   uses: sigstore/cosign-installer@v3.1.1
+      #   with:
+      #     cosign-release: 'v2.2.3'
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
@@ -42,10 +42,10 @@ jobs:
           push: true
           tags: |
             ghcr.io/cloudit:${{ steps.tagger.outputs.version-without-v }}
-      - name: Sign image with a key
-        run: |
-          cosign sign --yes --key env://COSIGN_PRIVATE_KEY "ghcr.io/cloudit:${{ steps.tagger.outputs.version-without-v }}@${DIGEST}"
-        env:
-          COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
-          COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
-          DIGEST: ${{ steps.build-and-push.outputs.digest }}
+      # - name: Sign image with a key
+      #   run: |
+      #     cosign sign --yes --key env://COSIGN_PRIVATE_KEY "ghcr.io/cloudit:${{ steps.tagger.outputs.version-without-v }}@${DIGEST}"
+      #   env:
+      #     COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
+      #     COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
+      #     DIGEST: ${{ steps.build-and-push.outputs.digest }}
