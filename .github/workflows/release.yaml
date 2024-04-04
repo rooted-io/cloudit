@@ -41,10 +41,10 @@ jobs:
           platforms: linux/amd64 #,linux/arm64
           push: true
           tags: |
-            ghcr.io/cloudit:${{ steps.tagger.outputs.version-without-v }}
+            ghcr.io/rooted-io/cloudit:${{ steps.tagger.outputs.version-without-v }}
       # - name: Sign image with a key
       #   run: |
-      #     cosign sign --yes --key env://COSIGN_PRIVATE_KEY "ghcr.io/cloudit:${{ steps.tagger.outputs.version-without-v }}@${DIGEST}"
+      #     cosign sign --yes --key env://COSIGN_PRIVATE_KEY "ghcr.io/rooted-io/cloudit:${{ steps.tagger.outputs.version-without-v }}@${DIGEST}"
       #   env:
       #     COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
       #     COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
