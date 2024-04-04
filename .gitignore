@@ -1,0 +1,21 @@
+# local development
+.DS_Store
+temp.txt
+
+# prowler output
+output
+
+# aws credentials
+aws-credentials.json
+
+# azure credentials
+azure-credentials.json
+
+# gcp credentials
+gcp-credentials.json
+*-gcp-sa.json
+
+
+# cosign
+cosign.key
+cosign.pub
