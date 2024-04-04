@@ -117,8 +117,6 @@ A [github action](https://github.com/rooted-io/cloudit/blob/main/.github/workflo
 
 
 At the current time the tool produce for every customer-provider tuple a report in `csv`, `json` and `html` formats (3 files for every report).  
-We are most interested in the html one, here is an example:  
-<img src="docs/images/report-html.png" alt="Report" style="max-width:100%;">
 
 
 

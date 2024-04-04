@@ -18,4 +18,3 @@ gcp-credentials.json
 
 # cosign
 cosign.key
-cosign.pub
