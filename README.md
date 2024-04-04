@@ -13,7 +13,7 @@ Automatic Cloud Posture Audit Tool ☁️ 🔬
 `Cloudit` is a script for automatic, multicloud and  multi-tenant *CSPM* (Cloud Security Posture Management).  
 The idea is to wrap some usefull open source cloud posture audit tools like [prowler](https://github.com/prowler-cloud/prowler)  behind an higher level abstraction in order to execute the tools in parallel on multiple customer's public cloud accounts.  
 
-> **Warning**
+> [!WARNING]  
 > This tools makes API calls to cloud provider endpoints and services: these calls may be billed by the provider.  
 
 As of right now this only work with `aws`, `azure` and `gcp` and uses json files to store customer credentials (inside the `credentials` folder).  
