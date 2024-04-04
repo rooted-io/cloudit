@@ -90,7 +90,7 @@ The *gcp* credentials file is called `gcp-credentials.json` and it is structured
 }
 ```   
 
-> **Note**  
+> [!NOTE]  
 > To inspect available services with prowler run `prowler {provider} --list-services`  
 
 This also want a path to the json file containing all the data for google service account authentication.  
@@ -99,7 +99,7 @@ via the `GOOGLE_APPLICATION_CREDENTIALS` property of the `gcp-credentials.json` 
 
 In the future, when the tool will become more mature, it will be almost mandatory to use a proper database engine.  
 
-> **Note**
+> [!WARNING]  
 > Before launching the tool remember to install dependencies with `pip3 install -r requirements.txt`  
 
 To launch the tool simply configure the various cloud provider credentials files and then use the following command:  
