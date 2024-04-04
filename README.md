@@ -111,7 +111,7 @@ When a new git tag is pushed, for example:
 ```console
  git tag -a v0.0.8 -m "0.0.8" && git push origin v0.0.8
 ```  
-A [github action](https://github.com/rooted-io/cloudit/blob/main/.github/workflows/release.yaml) is triggered to produce a github release and a new OCI image that is pushed [here](https://packages).  
+A [github action](https://github.com/rooted-io/cloudit/blob/main/.github/workflows/release.yaml) is triggered to produce a github release and a new OCI image that is pushed [here]([https://packages](https://github.com/rooted-io/cloudit/pkgs/container/cloudit)).  
 
 
 
