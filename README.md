@@ -99,7 +99,7 @@ via the `GOOGLE_APPLICATION_CREDENTIALS` property of the `gcp-credentials.json` 
 
 In the future, when the tool will become more mature, it will be almost mandatory to use a proper database engine.  
 
-> [!WARNING]  
+> [!NOTE]  
 > Before launching the tool remember to install dependencies with `pip3 install -r requirements.txt`  
 
 To launch the tool simply configure the various cloud provider credentials files and then use the following command:  
